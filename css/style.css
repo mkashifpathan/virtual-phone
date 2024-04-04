@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    display: flex;
+    justify-content: center
+}
 main {
     display: flex;
     align-items: center;
