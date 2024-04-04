@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 430px;
+    /* min-height: 896px; */
+    width: 100vw;
+    height: 100vh;
+}
+
+main .android {
+    width: 100%;
+    height: 100%;
+    background-image: url("../assets/wallpaper/wallpaper.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.top-banner {
+    height: 30px;
+    background: rgb(27, 27, 27);
+    color: white;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+}
+
+.top-banner .sims, .camera, .top-banner-signals-battery {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.top-banner .sims {
+    justify-content: flex-start;
+    gap: 5px;
+    font-size: 12px;
+}
+
+.top-banner-signals-battery {
+    justify-content: flex-end;
+}
+
+.top-banner .camera .lens {
+    width: 20px;
+    height: 20px;
+    background: #3f3f3f;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-banner .camera .lens .shutter {
+    width: 10px;
+    height: 10px;
+    background: #000;
+    border-radius: 50%;
+}
+
+.top-banner-signals-battery {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    filter: invert(1);
+}
+
+.top-banner-signals-battery .signals {
+    width: 15px;
+}
+
+.top-banner-signals-battery .battery {
+    width: 30px;
+}
+
+.apps {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    padding: 20px;
+    padding-top: 50px;
+}
+
+.apps .app a {
+    text-decoration: none;
+    color: white;
+}
+
+.apps .app a:hover {
+    opacity: 0.8;
+    font-weight: 500;
+}
+
+.apps .app a:visited {
+    color: white;
+}
+
+.apps .app a img {
+width: 58px;
+border-radius: 10%;
+}
